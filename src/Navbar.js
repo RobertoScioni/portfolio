@@ -8,12 +8,10 @@ function NavBar() {
 	]
 	return (
 		<div>
-			{" "}
 			<h1 className=" text-3xl">
-				{" "}
 				<span className="text-red-400">ROBERTO SCIONI</span>
 			</h1>
-			<div className="flex flex-wrap  gap-2 font-bold h-10">
+			<div className="flex flex-wrap  gap-2 font-bold">
 				{pages.map((page, index) => (
 					<a
 						href={page}
@@ -24,6 +22,7 @@ function NavBar() {
 				))}
 
 				<div className="flex-grow"></div>
+
 				<a
 					href="mailto:Pctech.Robertoscioni@gmail.com"
 					className="px-2 text-blue-400 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full"
