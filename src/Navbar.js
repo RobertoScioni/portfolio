@@ -1,20 +1,47 @@
 function NavBar() {
+	const pages = [
+		"About me",
+		"About Argo",
+		"Skills",
+		"Education",
+		"Other projects",
+	]
 	return (
-		<div className=" text-gray-300 p-1 md:p-4">
-			<div className="flex flex-wrap items-baseline gap-4 font-bold">
-				<h1 className=" text-2xl">ROBERTO SCIONI's Portfolio</h1>
-				<div className=" flex mb-0 transform hover:-translate-y-2 hover:text-green-400">
-					Story
-				</div>
-				<div className=" flex mb-0 transform hover:-translate-y-2 hover:text-green-400">
-					Skills
-				</div>
-				<div className=" flex mb-0 transform hover:-translate-y-2 hover:text-green-400">
-					Strive-school
-				</div>
-				<div className=" flex mb-0 transform hover:-translate-y-2 hover:text-green-400">
-					Argo
-				</div>
+		<div>
+			{" "}
+			<h1 className=" text-3xl">
+				{" "}
+				<span className="text-red-400">ROBERTO SCIONI</span>
+			</h1>
+			<div className="flex flex-wrap  gap-2 font-bold h-10">
+				{pages.map((page, index) => (
+					<a
+						href={page}
+						className="px-2 text-blue-400 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full"
+					>
+						{page}
+					</a>
+				))}
+
+				<div className="flex-grow"></div>
+				<a
+					href="mailto:Pctech.Robertoscioni@gmail.com"
+					className="px-2 text-blue-400 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full"
+				>
+					@mail
+				</a>
+				<a
+					href="https://github.com/RobertoScioni"
+					className="px-2 text-blue-400 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full"
+				>
+					GitHub
+				</a>
+				<a
+					href="https://www.linkedin.com/in/robertoscioni/"
+					className="px-2 text-blue-400 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full"
+				>
+					LinkeDin
+				</a>
 			</div>
 		</div>
 	)
