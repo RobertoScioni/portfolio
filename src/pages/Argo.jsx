@@ -4,7 +4,7 @@ import { faCheck, faSquare } from "@fortawesome/free-solid-svg-icons"
 
 const Argo = () => {
 	const FeaturesDelivered = [
-		"Reactive Interface",
+		"Responsive Interface",
 		"Instant Messaging",
 		"Character Impersonation",
 		"Standard Dice Notation",
@@ -26,7 +26,8 @@ const Argo = () => {
 			<header>
 				<h3 className=" text-2xl text-green-400">Argo</h3>
 				<h5 className=" ml-10 text-xl">
-					Responsive Web Application to manage roleplaying games.
+					Argo is a responsive Web Application to manage and play tabletop
+					roleplaying games.
 				</h5>
 			</header>
 			<br />
