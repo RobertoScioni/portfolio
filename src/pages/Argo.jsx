@@ -75,10 +75,22 @@ const Argo = () => {
 			<footer>
 				The code and live demo can be found at the following links
 				<a href="https://github.com/RobertoScioni/rpgtool-fe/tree/main">
-					: Frontend
+					<p className="px-2 text-blue-400 transition duration-700 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full">
+						: Frontend
+					</p>
 				</a>
-				,<a href="https://github.com/RobertoScioni/RPGTOOL-BE"> Backend</a>,
-				<a href="https://rpgtool-fe.vercel.app/"> Demo</a>
+				,
+				<a href="https://github.com/RobertoScioni/RPGTOOL-BE">
+					<p className="px-2 text-blue-400 transition duration-700 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full">
+						Backend
+					</p>
+				</a>
+				,
+				<a href="https://rpgtool-fe.vercel.app/">
+					<p className="px-2 text-blue-400 transition duration-700 transform hover:-translate-y-2 hover:text-green-400 align-baseline h-full">
+						Demo
+					</p>
+				</a>
 			</footer>
 		</div>
 	)
