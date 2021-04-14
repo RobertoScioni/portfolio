@@ -1,3 +1,5 @@
+const { Helmet } = require("react-helmet")
+
 const Skills = () => {
 	const Skills = {
 		"Programming Languages": ["Javascript", "Bash", "PHP", "C", "Pascal"],
@@ -13,12 +15,16 @@ const Skills = () => {
 	}
 	return (
 		<div>
+			<Helmet>
+				<title>Roberto Scioni/Skills</title>
+				<meta name="Skills" />
+			</Helmet>
 			{Object.keys(Skills).map((key) => (
 				<div>
 					<b className="text-green-400">{key}</b>
 					<div className="ml-10 flex flex-wrap gap-4">
 						{Skills[key].map((skill) => (
-							<span className=" transform hover:scale-125 hover:text-yellow-400 hover:bg-black hover:z-10">
+							<span className=" transition duration-300 transform hover:scale-150 hover:text-yellow-400 hover:bg-black hover:z-10">
 								{skill}
 							</span>
 						))}

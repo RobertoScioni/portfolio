@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet"
+
 const Education = () => {
 	return (
 		<div>
+			<Helmet>
+				<title>Roberto Scioni/Education</title>
+				<meta name="Education" />
+			</Helmet>
 			<p>
 				<b className="text-green-400"> Strive School</b>
 				<p className="ml-10">

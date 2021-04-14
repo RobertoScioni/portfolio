@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals"
 import AboutMe from "./pages/About Me"
 import Skills from "./pages/Skills"
 import Argo from "./pages/Argo.jsx"
-import StriveSchool from "./pages/StriveSchool"
+import StriveSchool from "./pages/Education"
 import ComingSoon from "./pages/Coming Soon"
 ReactDOM.render(
 	<BrowserRouter>

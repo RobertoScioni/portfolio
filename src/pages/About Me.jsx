@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet"
+
 const AboutMe = () => {
 	return (
 		<div className="flex flex-col gap-2">
+			<Helmet>
+				<title>Roberto Scioni/About me</title>
+				<meta name="About me" />
+			</Helmet>
 			<p className="font-bold border-b-2 border-green-400 w-max text-green-400">
 				I'm a FullStack Web developer, and all-round IT enthusiast.
 			</p>
